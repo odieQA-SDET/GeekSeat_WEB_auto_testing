@@ -11,21 +11,15 @@ public class DemoSignUp_Steps {
     @Steps
     DemoSIgnUp_Test DemoSignUpSteps;
 
-
     @Given("I was on the homepage of techlistic.com")
     public void iWasOnTheHomepageOfTechlisticCom() {
         DemoSignUpSteps.openHomePage();
         
     }
-    @When("I clicked textbox and Enter first name {string}")
-    public void iClickedTextboxAndEnterFirstName(String name) {
-        DemoSignUpSteps.InputName(name);
 
-    }
-
-    @And("I clicked textbox and Enter last name {string}")
-    public void iClickedTextboxAndEnterLastName(String last) {
-        DemoSignUpSteps.InputLastName(last);
+    @When("I clicked textbox to Enter first name and Enter last name")
+    public void iClickedTextboxToEnterFirstNameAndEnterLastName() {
+        DemoSignUpSteps.InputRegister();
     }
 
     @And("I selected gender \\(radio button)")
@@ -56,7 +50,7 @@ public class DemoSignUp_Steps {
 
 
     @And("I selected Continent \\(Select box)")
-    public void iSelectContinentSelectBox() {
+    public void iSelectContinentSelectBox() throws InterruptedException {
         DemoSignUpSteps.ClickContinentSB();
         DemoSignUpSteps.ClickOptionSB();
 
@@ -80,7 +74,7 @@ public class DemoSignUp_Steps {
     }
 
     @Then("I Click on {string} button")
-    public void iClickOnSubmitButton() {
+    public void iClickOnSubmitButton(String string) {
         DemoSignUpSteps.ClickSubmitButton();
 
     }

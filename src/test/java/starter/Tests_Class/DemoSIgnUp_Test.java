@@ -6,17 +6,11 @@ public class DemoSIgnUp_Test {
     DemoSignUp_Object DemoSignUpTest;
 
     public void openHomePage() {
-        DemoSignUpTest.openUrl("https://www.techlistic.com/p/selenium-practice-form.html");
+        DemoSignUpTest.open();
     }
 
-
-    public void InputName(String name) {
-        DemoSignUpTest.inputname();
-
-    }
-
-    public void InputLastName(String last) {
-        DemoSignUpTest.inputlastname();
+    public void InputRegister() {
+        DemoSignUpTest.inputregister();
     }
 
     public void ClickGenderRB() {
@@ -39,7 +33,7 @@ public class DemoSIgnUp_Test {
         DemoSignUpTest.clicktoolmultipleCB();
     }
 
-    public void ClickContinentSB() {
+    public void ClickContinentSB() throws InterruptedException {
         DemoSignUpTest.clickcontinenSB();
     }
 
@@ -63,6 +57,10 @@ public class DemoSIgnUp_Test {
     }
 
     public void ClickSubmitButton() {
+        DemoSignUpTest.clicksubmit();
     }
 
 }
+
+
+
