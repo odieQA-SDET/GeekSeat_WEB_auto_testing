@@ -12,55 +12,6 @@ public class DemoSignUp_Steps {
     DemoSIgnUp_Test DemoSignUpSteps;
 
 
-    @When("I clicked and Mouseover {string} button Icon to shop by category based")
-    public void iClickedAndMouseoverScrollMenuButtonIconToShopByCategoryBased(String string) {
-        ProductViaCategorySteps.clickedscrollmenu();
-    }
-
-    @And("I cLicked {string} maincategory of Electronics")
-    public void iCLickedCellPhonesAccessoriesMaincategoryOfElectronics(String string) {
-        ProductViaCategorySteps.clickedmaincategory();
-    }
-
-    @And("After the page loads, I clicked {string} in the left hand side navigation section")
-    public void afterThePageLoadsIClickedCellPhonesSmartphonesInTheLeftHandSideNavigationSection(String string) {
-        ProductViaCategorySteps.clickedleftnavigation();
-    }
-
-    @And("Now, click - More refinements \\(appears on the left at the end of all filters)")
-    public void nowClickMoreRefinementsAppearsOnTheLeftAtTheEndOfAllFilters() {
-        ProductViaCategorySteps.clickedallfilter();
-
-    }
-
-    @And("Add First Filter is screen size appearing in the pop-up")
-    public void addFirstFilterIsScreenSizeAppearingInThePopUp() {
-        ProductViaCategorySteps.clikcedscreensize();
-        ProductViaCategorySteps.clickedscreensizecontent();
-
-    }
-
-    @And("Add Second Filter is Price appearing in the pop-up")
-    public void addSecondFilterIsPriceAppearingInThePopUp() {
-        ProductViaCategorySteps.clickedprice();
-        ProductViaCategorySteps.clickedpricecontent();
-
-    }
-
-    @And("Add Third Filter is Item Location appearing in the pop-up and click apply")
-    public void addThirdFilterIsItemLocationAppearingInThePopUpAndClickApply() {
-        ProductViaCategorySteps.clickeditemlocation();
-        ProductViaCategorySteps.clikceditemloccontent();
-        ProductViaCategorySteps.clickedapply();
-
-    }
-
-    @And("Verify that the filter tags are applied also counting tags are applied that equals with integer result")
-    public void verifyThatTheFilterTagsAreAppliedAlsoCountingTagsAreAppliedThatEqualsWithIntegerResult() {
-        ProductViaCategorySteps.clickedverifytagapplied();
-
-    }
-
     @Given("I was on the homepage of techlistic.com")
     public void iWasOnTheHomepageOfTechlisticCom() {
         DemoSignUpSteps.openHomePage();
