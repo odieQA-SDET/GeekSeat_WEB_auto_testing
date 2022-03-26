@@ -6,6 +6,8 @@ public class DemoSIgnUp_Test {
     DemoSignUp_Object ProductViaCategotyObject;
 
     public void openHomePage() {
-        ProductViaCategotyObject.open();
-    
+        ProductViaCategotyObject.openUrl("https://www.techlistic.com/p/selenium-practice-form.html");
+    }
+
+
 }
