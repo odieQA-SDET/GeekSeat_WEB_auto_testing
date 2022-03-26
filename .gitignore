@@ -1,0 +1,6 @@
+# Project exclude paths
+/.target/
+/.idea/
+/.log/
+# Project exclude paths
+/target/
