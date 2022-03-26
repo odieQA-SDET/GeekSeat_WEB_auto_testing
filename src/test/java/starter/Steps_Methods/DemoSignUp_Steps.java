@@ -17,48 +17,72 @@ public class DemoSignUp_Steps {
         DemoSignUpSteps.openHomePage();
         
     }
+    @When("I clicked textbox and Enter first name {string}")
+    public void iClickedTextboxAndEnterFirstName(String name) {
+        DemoSignUpSteps.InputName(name);
 
-    @When("I clicked and Enter first and last name \\(textbox)")
-    public void iClickedAndEnterFirstAndLastNameTextbox() {
+    }
+
+    @And("I clicked textbox and Enter last name {string}")
+    public void iClickedTextboxAndEnterLastName(String last) {
+        DemoSignUpSteps.InputLastName(last);
     }
 
     @And("I selected gender \\(radio button)")
     public void iCLickedAndSelectGenderRadioButton() {
+        DemoSignUpSteps.ClickGenderRB();
     }
 
     @And("I selected years of experience \\(radio button)")
     public void iSelectYearsOfExperienceRadioButton() {
+        DemoSignUpSteps.ClickExperienceRB();
+    }
+
+    @And("I entered the date")
+    public void iEnteredTheDate() {
+        DemoSignUpSteps.EnterDate();
     }
 
     @And("I selected Profession \\(Checkbox)")
     public void iSelectProfessionCheckbox() {
+        DemoSignUpSteps.ClickProfessionCB();
 
     }
 
     @And("I selected Automation tools you are familiar with \\(multiple checkboxes)")
     public void iSelectAutomationToolsYouAreFamiliarWithMultipleCheckboxes() {
+        DemoSignUpSteps.ClickToolMultipleCB();
     }
 
 
     @And("I selected Continent \\(Select box)")
     public void iSelectContinentSelectBox() {
+        DemoSignUpSteps.ClickContinentSB();
+        DemoSignUpSteps.ClickOptionSB();
 
     }
 
     @And("I selected multiple commands from a multi select box")
     public void iSelectedMultipleCommandsFromAMultiSelectBox() {
+        DemoSignUpSteps.ClickMultipleCommandsMultipleSB();
+        DemoSignUpSteps.ClickMultipleSB();
     }
 
     @And("I handled Upload image")
     public void iHandledUploadImage() {
+        DemoSignUpSteps.UploadImage();
     }
 
     @And("I clicked on Download file link and handle the download file pop-up")
     public void iClickedOnDownloadFileLinkAndHandleTheDownloadFilePopUp() {
+        DemoSignUpSteps.ClickDownloadFile();
         
     }
 
     @Then("I Click on {string} button")
     public void iClickOnSubmitButton() {
+        DemoSignUpSteps.ClickSubmitButton();
+
     }
+
 }

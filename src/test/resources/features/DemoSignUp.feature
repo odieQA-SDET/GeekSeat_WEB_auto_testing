@@ -7,9 +7,11 @@ Feature: As tester feature Access a Demo Sign-Up Selenium Automation Practice Fo
 
     Scenario: Access a Demo Sign-Up Selenium Automation Practice Form in techlistic.com
     Given I was on the homepage of techlistic.com
-    When I clicked and Enter first and last name (textbox)
+    When I clicked textbox and Enter first name "Odie"
+    And I clicked textbox and Enter last name "Testing"
     And I selected gender (radio button)
     And I selected years of experience (radio button)
+    And I entered the date
     And I selected Profession (Checkbox)
     And I selected Automation tools you are familiar with (multiple checkboxes)
     And I selected Continent (Select box)
