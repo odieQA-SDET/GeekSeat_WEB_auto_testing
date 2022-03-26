@@ -41,7 +41,7 @@ public class DemoSIgnUp_Test {
         DemoSignUpTest.clickoptionSB();
     }
 
-    public void ClickMultipleCommandsMultipleSB() {
+    public void ClickMultipleCommandsMultipleSB() throws InterruptedException {
         DemoSignUpTest.clickcommandmultipleSB();
     }
 
@@ -54,11 +54,12 @@ public class DemoSIgnUp_Test {
     }
 
     public void ClickDownloadFile() {
+        DemoSignUpTest.clickdownload();
     }
-
+/*
     public void ClickSubmitButton() {
-        DemoSignUpTest.clicksubmit();
-    }
+     //   DemoSignUpTest.clicksubmit();
+    }*/
 
 }
 

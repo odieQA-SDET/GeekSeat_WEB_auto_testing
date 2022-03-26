@@ -57,7 +57,7 @@ public class DemoSignUp_Steps {
     }
 
     @And("I selected multiple commands from a multi select box")
-    public void iSelectedMultipleCommandsFromAMultiSelectBox() {
+    public void iSelectedMultipleCommandsFromAMultiSelectBox() throws InterruptedException {
         DemoSignUpSteps.ClickMultipleCommandsMultipleSB();
         DemoSignUpSteps.ClickMultipleSB();
     }
@@ -75,7 +75,7 @@ public class DemoSignUp_Steps {
 
     @Then("I Click on {string} button")
     public void iClickOnSubmitButton(String string) {
-        DemoSignUpSteps.ClickSubmitButton();
+     //   DemoSignUpSteps.ClickSubmitButton();
 
     }
 

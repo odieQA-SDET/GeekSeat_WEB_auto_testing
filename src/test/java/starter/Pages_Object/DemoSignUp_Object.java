@@ -62,8 +62,8 @@ public class DemoSignUp_Object extends PageObject {
     WebElement ClickcontinenSB;
     public void clickcontinenSB() throws InterruptedException {
         JavascriptExecutor executor = (JavascriptExecutor)getDriver();
-        executor.executeScript("scroll(0,500)");
-        sleep(3000);
+        executor.executeScript("scroll(0,650)");
+        sleep(1500);
         ClickcontinenSB.click();
     }
 
@@ -75,7 +75,10 @@ public class DemoSignUp_Object extends PageObject {
 //choice selenium commands
     @FindBy(id = "selenium_commands")
     WebElement ClickcommandSB;
-    public void clickcommandmultipleSB() {
+    public void clickcommandmultipleSB() throws InterruptedException {
+        JavascriptExecutor executor = (JavascriptExecutor)getDriver();
+        executor.executeScript("scroll(0,350)");
+        sleep(500);
         ClickcommandSB.click();
     }
 
@@ -86,20 +89,22 @@ public class DemoSignUp_Object extends PageObject {
     }
 //upload photo
     By chooseFile = By.id("photo");
-   // @FindBy(id = "photo")
-  //  WebElement Clickuploadimage;
     public void uploadimage() {
         upload("C:\\Users\\WhiteCode\\Pictures\\Picture1.jpg").to(find(chooseFile));
-
     }
-
-
+//download
+    @FindBy(xpath = "//a[contains(text(),'Click here to Download File')]")
+    WebElement Clickdownload;
+    public void clickdownload() {
+        Clickdownload.click();
+        Clickdownload.getAttribute("https://github.com/stanfy/behave-rest/blob/master/features/conf.yaml");
+    }
+/*
     @FindBy(xpath ="//button[@id='submit']")
     WebElement Clicksubmit;
     public void clicksubmit() {
         Clicksubmit.click();
-    }
-
+    }*/
 
 }
 
